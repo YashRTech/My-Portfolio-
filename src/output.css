@@ -7,7 +7,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
-    --color-lime-300: oklch(0.897 0.196 126.665);
     --color-green-500: oklch(0.723 0.219 149.579);
     --color-green-800: oklch(0.448 0.119 151.328);
     --color-blue-400: oklch(0.707 0.165 254.624);
@@ -62,7 +61,6 @@
     );
     --font-cursive: "Style Script", "cursive";
     --font-markazai: "Markazi Text", serif;
-    --font-jost: "Jost", sans-serif;
   }
 }
 @layer base {
@@ -591,6 +589,9 @@
   .max-w-screen {
     max-width: 100vw;
   }
+  .min-w-\[200px\] {
+    min-width: 200px;
+  }
   .min-w-screen {
     min-width: 100vw;
   }
@@ -674,6 +675,14 @@
   .translate-full {
     --tw-translate-x: 100%;
     --tw-translate-y: 100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-x-\[-20px\] {
+    --tw-translate-x: -20px;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-\[-50px\] {
+    --tw-translate-y: -50px;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-3d {
@@ -1098,9 +1107,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
-  .overflow-hidden {
-    overflow: hidden;
   }
   .overflow-x-hidden {
     overflow-x: hidden;
@@ -1558,9 +1564,6 @@
   .font-cursive {
     font-family: var(--font-cursive);
   }
-  .font-jost {
-    font-family: var(--font-jost);
-  }
   .font-markazai {
     font-family: var(--font-markazai);
   }
@@ -1862,6 +1865,9 @@
   .scheme-only-light {
     color-scheme: only light;
   }
+  .opacity-0 {
+    opacity: 0%;
+  }
   .mix-blend-plus-darker {
     mix-blend-mode: plus-darker;
   }
@@ -1890,9 +1896,6 @@
   }
   .shadow-initial {
     --tw-shadow-color: initial;
-  }
-  .shadow-lime-300 {
-    --tw-shadow-color: var(--color-lime-300);
   }
   .inset-shadow-initial {
     --tw-inset-shadow-color: initial;
@@ -2013,10 +2016,6 @@
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
-  }
-  .duration-500 {
-    --tw-duration: 500ms;
-    transition-duration: 500ms;
   }
   .ease-in {
     --tw-ease: var(--ease-in);
@@ -2395,7 +2394,7 @@
     }
   }
 }
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Markazi+Text:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Style+Script&display=swap');
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;

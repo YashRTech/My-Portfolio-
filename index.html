@@ -18,16 +18,8 @@
     <meta property="og:title" content="Yash Tiwari | Frontend Developer">
     <meta property="og:description"
         content="I love building clean, responsive, and interactive websites using Tailwind, JavaScript, and GSAP.">
-
-
     <link rel="stylesheet" href="/src/output.css">
     <link rel="stylesheet" href="/src/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -35,80 +27,69 @@
 
 </head>
 
-<body
-    class="bg-gradient-to-r from-[#0d0d0d] via-[#1a1a3d] to-[#0d0d0d] text-white font-markazai tracking-wider overflow-x-hidden">
+<body class="bg-gradient-to-r from-[#0d0d0d] via-[#1a1a3d] to-[#0d0d0d] text-white font-markazai tracking-wider">
 
 
     <!--! Header Section -->
-    <header class="flex justify-around items-center mx-auto z-50 p-4 sticky top-0 h-25 bg-[#0a0a2a] ">
-        <div class="logo font-cursive">
-            <h1 class="text-3xl  shadow-lime-300 text-[#00eaff] font-extrabold ">Yash Tiwari</h1>
+    <header class="flex justify-around items-center z-50 p-4 sticky top-0 h-25">
+        <div class="logo translate-y-[-50px] opacity-0 translate-x-[-20px] font-cursive">
+            <h1 class="text-3xl text-[#00eaff] font-extrabold ">Yash Tiwari</h1>
         </div>
         <nav class="nav sm:flex md:gap-7 sm:gap-4 hidden text-xl">
-
-            <p class="list-none"><a href="#Home">Home</a></p>
-            <p class="list-none"><a href="#Services">Services</a></p>
-            <p class="list-none"><a href="#Projects">Projects</a></p>
-            <p class="list-none"><a href="#Skills">Skills</a></p>
-            <!-- <p class="list-none"><a href="#Contact">Contact</a></p> -->
-
+            <p><a href="#Home">Home</a></p>
+            <p><a href="#Services">Services</a></p>
+            <p><a href="#Projects">Projects</a></p>
+            <p><a href="#Skills">Skills</a></p>
         </nav>
         <div class="contactus text-xl sm:inline-block hidden">
-            <!-- <div class="hidden"><i class="ri-sun-fill"></i></div>
-            <div><i class="ri-moon-fill"></i></div> -->
-            <li class="list-none "><a href="#Contact"
-                    class="p-3 border rounded-xl  transition-all duration-500 btn text-[#0d0d0d] bg-[#00eaffae] border-[#00eaff] hover:bg-[#ffcc00] hover:border-[#ffcc00] btn-press hover:text-[#0d0d0d]">Contact</a>
-            </li>
+            <p><a href="#Contact"
+                    class="p-3 border rounded-xl btn text-[#0d0d0d] bg-[#00eaffae] border-[#00eaff] hover:bg-[#ffcc00] hover:border-[#ffcc00] btn-press hover:text-[#0d0d0d]">Contact</a>
+            </p>
         </div>
 
         <div class="icon text-2xl sm:hidden">
-            <i class="ri-menu-3-line"></i>
+            <i class="fa-solid fa-bars"></i>
         </div>
-        <div class="full sm:hidden ">
-
-            <p class="list-none"><a href="#Home">Home</a></p>
-            <p class="list-none"><a href="#Services">Services</a></p>
-            <p class="list-none"><a href="#Projects">Projects</a></p>
-            <p class="list-none"><a href="#Skills">Skills</a></p>
-            <p class="list-none"><a href="#Contact">Contact</a></p>
-            <i class="ri-close-line closeIcon"></i>
-
-
+        <div class="full sm:hidden flex ">
+            <p><a href="#Home">Home</a></p>
+            <p><a href="#Services">Services</a></p>
+            <p><a href="#Projects">Projects</a></p>
+            <p><a href="#Skills">Skills</a></p>
+            <p><a href="#Contact">Contact</a></p>
+            <i class="fa-solid fa-xmark closeIcon"></i>
         </div>
     </header>
 
     <!--! Home Section -->
     <main id="Home"
-        class="grid grid-cols-1 sm:grid-cols-2 max-w-[1100px] p-4 gap-5 mx-auto justify-items-center relative sm:h-[91vh] items-center overflow-hidden mb-25">
+        class="grid grid-cols-1 sm:grid-cols-2 max-w-[1100px] p-4 gap-5 mx-auto justify-items-center relative sm:h-[91vh] items-center mb-25">
 
-
-        <div class="flex flex-col overflow-hidden pb-4 mt-10 sm:mt-0 text-center sm:text-left">
-            <h1 class="text-[#ffffff] sm:text-5xl 3xs:text-4xl text-3xl  sub1">Hi, I'm Yash Tiwari! </h1>
+        <div class="flex flex-col pb-4 mt-10 sm:mt-0 text-center sm:text-left">
+            <h1 class="text-[#ffffff] sm:text-5xl 3xs:text-4xl text-3xl sub1">Hi, I'm Yash Tiwari! </h1>
             <h2 class="sm:text-4xl 3xs:text-3xl text-2xl mt-1 mb-5 title font-bold text-[#ffcc00]">Frontend Developer
             </h2>
-            <p class="text-gray-400 3xs:text-lg sub2">I love building clean, responsive, and interactive websites using
+            <p class="3xs:text-lg sub2">I love building clean, responsive, and interactive websites using
                 Tailwind,
-                JavaScript, and GSAP</p>
+                JavaScript, and GSAP.</p>
             <div class="mt-8">
                 <a href="#Contact"
-                    class=" p-4  border  rounded-xl text-xl transition-all duration-500 btn mainBtn text-[#0d0d0d] bg-[#00eaffae] border-[#00eaff] hover:bg-[#ffcc00] hover:border-[#ffcc00] hover:text-[#0d0d0d] btn-press">Lets
+                    class=" p-4  border  rounded-xl text-xl btn mainBtn text-[#0d0d0d] bg-[#00eaffae] border-[#00eaff] hover:bg-[#ffcc00] hover:border-[#ffcc00] hover:text-[#0d0d0d] btn-press">Lets
                     Build
                     Yours</a>
-
             </div>
         </div>
         <div class="relative mb-10 sm:mb-0 p-2">
             <div class="mainImgWrap">
                 <div class="h-auto rounded-x mainImg mt-15 mb-15 sm:mt-0"><img src="/images/edited.webp" width="280"
-                        height="auto" alt="Profile Picture" loading="lazy" class="rounded-x"></div>
+                        height="auto" alt="Profile Picture" class="min-w-[200px]" ></div>
             </div>
         </div>
     </main>
 
     <!--! What I Offer Section -->
-    <section id="Services" class="py-16 bg-[#0a0a2a] text-white px-2">
+    <section id="Services" class="py-16 bg-[#0a0a2a] text-white px-2 lazy-load">
         <div class="max-w-[1100px] mx-auto text-center">
-            <h2 class="sm:text-5xl text-4xl  font-bold text-[#00eaff] mb-6">What I Offer</h2>
+            <h2 class="sm:text-5xl text-4xl font-bold text-[#00eaff] mb-6">What I Offer</h2>
             <p class="text-gray-400 sm:text-xl 3xs:text-lg mb-10 s-text">
                 I create modern, high-performance, and responsive websites that enhance user experience and drive
                 engagement.
@@ -185,7 +166,7 @@
     </section>
 
     <!--! Projects Section -->
-    <section id="Projects" class="py-16 bg-[#0a0a2a] overflow-x-hidden text-white">
+    <section id="Projects" class="py-16 bg-[#0a0a2a] overflow-x-hidden text-white lazy-load">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="sm:text-5xl text-4xl font-bold text-[#00eaff] mb-6">Projects</h2>
             <p class="text-gray-400 text-xl mb-10">
@@ -265,7 +246,7 @@
 
     <!--! Skills Section -->
 
-    <section id="Skills" class="py-16 bg-[#0a0a2a] text-white">
+    <section id="Skills" class="py-16 bg-[#0a0a2a] text-white lazy-load">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <h2 class="text-5xl font-bold text-[#00eaff] mb-12">Skills</h2>
             <div class="flex flex-wrap justify-center gap-8">
@@ -293,7 +274,7 @@
 
 
     <!--! Contact Section -->
-    <section id="Contact" class="py-16 bg-[#060635]">
+    <section id="Contact" class="py-16 bg-[#060635] lazy-load">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-12 text-[#00eaff]">Let's Connect!</h2>
             <div class="4xs:space-y-0 space-y-2 flex flex-wrap  xs:space-y-0 justify-center xs:space-x-8 space-x-2">
@@ -313,7 +294,7 @@
     </section>
 
     <!--! Footer Section -->
-    <footer class="bg-[#0d0d0d] text-[#a0a0a0] py-8 text-center">
+    <footer class="bg-[#0d0d0d] text-[#a0a0a0] py-8 text-center lazy-load">
         <p>© 2025 Yash Tiwari. Built with Tailwind CSS 💙</p>
     </footer>
 
@@ -326,7 +307,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
