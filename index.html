@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash's Portfolio</title>
+
+    <!-- Basic Meta Tags -->
+    <meta name="author" content="Yash Tiwari">
+    <meta name="description"
+        content="Welcome to Yash Tiwari's Portfolio - Showcasing my work in Frontend Development and Web Design">
+    <meta name="keywords"
+        content="Frontend Developer, Web Development, HTML, CSS, JavaScript, Tailwind CSS, React, Portfolio, GSAP">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags (for better social media sharing) -->
+    <meta property="og:title" content="Yash Tiwari | Frontend Developer">
+    <meta property="og:description"
+        content="I love building clean, responsive, and interactive websites using Tailwind, JavaScript, and GSAP.">
+
+
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body
+    class="bg-gradient-to-r from-[#0d0d0d] via-[#1a1a3d] to-[#0d0d0d] text-white font-markazai tracking-wider overflow-x-hidden">
+
+
+    <!--! Header Section -->
+    <header class="flex justify-around items-center mx-auto z-50 p-4 sticky top-0 h-25 bg-[#0a0a2a] ">
+        <div class="logo font-cursive">
+            <h1 class="text-3xl  shadow-lime-300 text-[#00eaff] font-extrabold ">Yash Tiwari</h1>
+        </div>
+        <nav class="nav sm:flex md:gap-7 sm:gap-4 hidden text-xl">
+
+            <p class="list-none"><a href="#Home">Home</a></p>
+            <p class="list-none"><a href="#Services">Services</a></p>
+            <p class="list-none"><a href="#Projects">Projects</a></p>
+            <p class="list-none"><a href="#Skills">Skills</a></p>
+            <!-- <p class="list-none"><a href="#Contact">Contact</a></p> -->
+
+        </nav>
+        <div class="contactus text-xl sm:inline-block hidden">
+            <!-- <div class="hidden"><i class="ri-sun-fill"></i></div>
+            <div><i class="ri-moon-fill"></i></div> -->
+            <li class="list-none "><a href="#Contact"
+                    class="p-3 border rounded-xl  transition-all duration-500 btn text-[#0d0d0d] bg-[#00eaffae] border-[#00eaff] hover:bg-[#ffcc00] hover:border-[#ffcc00] btn-press hover:text-[#0d0d0d]">Contact</a>
+            </li>
+        </div>
+
+        <div class="icon text-2xl sm:hidden">
+            <i class="ri-menu-3-line"></i>
+        </div>
+        <div class="full sm:hidden ">
+
+            <p class="list-none"><a href="#Home">Home</a></p>
+            <p class="list-none"><a href="#Services">Services</a></p>
+            <p class="list-none"><a href="#Projects">Projects</a></p>
+            <p class="list-none"><a href="#Skills">Skills</a></p>
+            <p class="list-none"><a href="#Contact">Contact</a></p>
+            <i class="ri-close-line closeIcon"></i>
+
+
+        </div>
+    </header>
+
+    <!--! Home Section -->
+    <main id="Home"
+        class="grid grid-cols-1 sm:grid-cols-2 max-w-[1100px] p-4 gap-5 mx-auto justify-items-center relative sm:h-[91vh] items-center overflow-hidden mb-25">
+
+
+        <div class="flex flex-col overflow-hidden pb-4 mt-10 sm:mt-0 text-center sm:text-left">
+            <h1 class="text-[#ffffff] sm:text-5xl 3xs:text-4xl text-3xl  sub1">Hi, I'm Yash Tiwari! </h1>
+            <h2 class="sm:text-4xl 3xs:text-3xl text-2xl mt-1 mb-5 title font-bold text-[#ffcc00]">Frontend Developer
+            </h2>
+            <p class="text-gray-400 3xs:text-lg sub2">I love building clean, responsive, and interactive websites using
+                Tailwind,
+                JavaScript, and GSAP</p>
+            <div class="mt-8">
+                <a href="#Contact"
+                    class=" p-4  border  rounded-xl text-xl transition-all duration-500 btn mainBtn text-[#0d0d0d] bg-[#00eaffae] border-[#00eaff] hover:bg-[#ffcc00] hover:border-[#ffcc00] hover:text-[#0d0d0d] btn-press">Lets
+                    Build
+                    Yours</a>
+
+            </div>
+        </div>
+        <div class="relative mb-10 sm:mb-0 p-2">
+            <div class="mainImgWrap">
+                <div class="h-auto rounded-x mainImg mt-15 mb-15 sm:mt-0"><img src="/images/edited.webp" width="280"
+                        height="auto" alt="Profile Picture" loading="lazy" class="rounded-x"></div>
+            </div>
+        </div>
+    </main>
+
+    <!--! What I Offer Section -->
+    <section id="Services" class="py-16 bg-[#0a0a2a] text-white px-2">
+        <div class="max-w-[1100px] mx-auto text-center">
+            <h2 class="sm:text-5xl text-4xl  font-bold text-[#00eaff] mb-6">What I Offer</h2>
+            <p class="text-gray-400 sm:text-xl 3xs:text-lg mb-10 s-text">
+                I create modern, high-performance, and responsive websites that enhance user experience and drive
+                engagement.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-10 max-w-[1100px] mx-auto px-6 swiper">
+            <!-- swiper wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Card 1 -->
+                <div
+                    class="p-8 bg-[#121212] swiper-slide  rounded-lg shadow-lg hover:shadow-[#00eaff] transition-all duration-300">
+                    <div class="mb-4"><i class="ri-smartphone-line text-4xl text-blue-400"></i></div>
+                    <h3 class="text-2xl font-semibold mb-2">Responsive Design</h3>
+                    <p class="text-gray-400">
+                        Ensuring seamless user experience across all devices, from desktops to mobile screens.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="p-8 bg-[#121212] swiper-slide  rounded-lg shadow-lg hover:shadow-[#00eaff] transition-all duration-300">
+                    <div class="mb-4"><i class="ri-speed-line text-4xl text-blue-400 mb-4"></i></div>
+                    <h3 class="text-2xl font-semibold mb-2">Fast & Optimized</h3>
+                    <p class="text-gray-400">
+                        Delivering high-performance websites with optimized code and fast load times.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="p-8 bg-[#121212] swiper-slide  rounded-lg shadow-lg hover:shadow-[#00eaff] transition-all duration-300">
+                    <div class="mb-4"><i class="ri-code-s-slash-line text-4xl text-blue-400 mb-4"></i></div>
+                    <h3 class="text-2xl font-semibold mb-2">Clean Code</h3>
+                    <p class="text-gray-400">
+                        Writing well-structured, maintainable, and scalable code for long-term usability.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="p-8 bg-[#121212] swiper-slide  rounded-lg shadow-lg hover:shadow-[#00eaff] transition-all duration-300">
+                    <div class="mb-4"><i class="ri-paint-brush-line text-4xl text-blue-400 mb-4"></i></div>
+                    <h3 class="text-2xl font-semibold mb-2">Modern UI/UX</h3>
+                    <p class="text-gray-400">
+                        Designing visually appealing and interactive interfaces with smooth animations.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                    class="p-8 bg-[#121212] swiper-slide  rounded-lg shadow-lg hover:shadow-[#00eaff] transition-all duration-300">
+                    <div class="mb-4"><i class="ri-line-chart-line text-4xl text-blue-400 mb-4"></i></div>
+                    <h3 class="text-2xl font-semibold mb-2">SEO Friendly</h3>
+                    <p class="text-gray-400">
+                        Implementing best SEO practices to improve visibility and reach a wider audience.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                    class="p-8 bg-[#121212] swiper-slide  rounded-lg shadow-lg hover:shadow-[#00eaff] transition-all duration-300">
+                    <div class="mb-4"><i class="ri-tools-line text-4xl text-blue-400 mb-4"></i></div>
+                    <h3 class="text-2xl font-semibold mb-2">Maintenance & Support</h3>
+                    <p class="text-gray-400">
+                        Providing updates, bug fixes, and continuous improvements for your website.
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination text-white"></div>
+        </div>
+    </section>
+
+    <!--! Projects Section -->
+    <section id="Projects" class="py-16 bg-[#0a0a2a] overflow-x-hidden text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="sm:text-5xl text-4xl font-bold text-[#00eaff] mb-6">Projects</h2>
+            <p class="text-gray-400 text-xl mb-10">
+                A showcase of my latest web development projects, built with modern technologies.
+            </p>
+        </div>
+
+        <!-- Project 1 -->
+        <div class="grid py-8 gap-4 max-w-[1100px] mx-auto px-6 place-items-center bg-[#1a1a3d] project1">
+            <h2 class="text-center text-[#56bf01] 3xs:text-4xl text-3xl mb-4">Landing Page</h2>
+            <div class="grid grid-cols-1 space-y-5 md:grid-cols-[70%_30%]">
+                <div class="flex flex-col  justify-center font-jost ">
+                    <p class="mb-3 3xs:text-xl"><span class="text-[#09ceff]">Description: </span>A Portfolio website for
+                        a
+                        graphic
+                        designer.</p>
+                    <p class="mb-3 3xs:text-xl"><span class="text-[#09ceff]">Tech: </span>HTML, CSS, JavaScript,
+                        Tailwind
+                        CSS, GSAP.</p>
+                    <p class="mb-3 3xs:text-xl"><span class="text-[#09ceff]">Features: </span>A Portfolio website with
+                        responsive designs, modern effects, and smooth animatioons.</p>
+
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://nikks-portfolio-site.netlify.app/" target="_blank"
+                            class="bg-blue-700 text-white 2xs:px-4 2xs:py-2 px-2 py-1 rounded hover:bg-blue-800 3xs:text-xl"
+                            rel="noopener noreferrer">Live
+                            Demo</a>
+                        <a href="https://github.com/YashRTech/Modern-portfolio-design" target="_blank"
+                            class="bg-gray-800 text-white 2xs:px-4 2xs:py-2 px-2 py-1 rounded hover:bg-gray-900 3xs:text-xl"
+                            rel="noopener noreferrer">GitHub
+                            Code</a>
+                    </div>
+                </div>
+                <div class="">
+                    <img src="/images/portfolio.webp" alt="Portfolio site" class="rounded-lg mb-6  w-full"
+                        loading="lazy">
+
+                </div>
+            </div>
+
+        </div>
+        <!-- Project 2 -->
+        <div class="grid py-8 gap-4 max-w-[1100px] mx-auto px-6 mt-5 place-items-center bg-[#1a1a3d] project2">
+            <h2 class="text-center text-[#56bf01] 3xs:text-4xl text-3xl mb-4">Rock Papers Scissors Game</h2>
+            <div class="grid grid-cols-1 space-y-5 md:grid-cols-[70%_30%]">
+                <div class="flex flex-col  justify-center font-jost ">
+                    <p class="mb-3 3xs:text-xl"><span class="text-[#09ceff]">Description: </span>Built a classic game
+                        with
+                        modern UI/UX.</p>
+                    <p class="mb-3 3xs:text-xl"><span class="text-[#09ceff]">Tech: </span>HTML, CSS, JavaScript,
+                        Tailwind
+                        CSS.</p>
+                    <p class="mb-3 3xs:text-xl"><span class="text-[#09ceff]">Features: </span>Score tracking, responsive
+                        design, smooth animations.</p>
+
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://rock-papers-scissorsgame.netlify.app/" target="_blank"
+                            class="bg-blue-700 text-white 2xs:px-4 2xs:py-2 px-2 py-1 rounded hover:bg-blue-800 3xs:text-xl"
+                            rel="noopener noreferrer">Live
+                            Demo</a>
+                        <a href="https://github.com/YashRTech/my-project" target="_blank"
+                            class="bg-gray-800 text-white 2xs:px-4 2xs:py-2 px-2 py-1 rounded hover:bg-gray-900 3xs:text-xl"
+                            rel="noopener noreferrer">GitHub
+                            Code</a>
+                    </div>
+                </div>
+                <div class="">
+                    <img src="/images/rockpaperscissorsgame.webp" alt="Rock Paper Scissors"
+                        class="rounded-lg mb-6 hidden xs:inline w-full">
+                    <img src="/images/mobileviewrockpaperscissors.webp" alt="Rock Paper Scissors"
+                        class="rounded-lg mb-6 xs:hidden w-full" loading="lazy">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--! Skills Section -->
+
+    <section id="Skills" class="py-16 bg-[#0a0a2a] text-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold text-[#00eaff] mb-12">Skills</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="bg-[#00eaff] p-6 rounded-lg shadow-md text-gray-900">
+                    <i class="text-8xl w-25 h-25 fa-brands fa-html5"></i>
+                    <b class="block font-semibold text-black">HTML</b>
+                </div>
+                <div class="bg-[#00eaff] p-6 rounded-lg shadow-md text-gray-900">
+                    <i class="text-8xl fa-brands fa-css w-25 h-25"></i>
+                    <b class="block font-semibold text-black">CSS</b>
+                </div>
+                <div class="bg-[#00eaff] p-6 rounded-lg shadow-md text-gray-900">
+
+                    <i class="text-8xl fa-brands fa-js w-25 h-25"></i>
+                    <b class="block font-semibold text-black">JavaScript</b>
+                </div>
+                <div class="bg-[#00eaff] p-6 rounded-lg shadow-md text-gray-900">
+                    <img src="/images/tailwindcli.webp" class="w-25 h-25" alt="Tailwind icon">
+                    <b class="block font-semibold text-black">Tailwind CSS</b>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--! Contact Section -->
+    <section id="Contact" class="py-16 bg-[#060635]">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-12 text-[#00eaff]">Let's Connect!</h2>
+            <div class="4xs:space-y-0 space-y-2 flex flex-wrap  xs:space-y-0 justify-center xs:space-x-8 space-x-2">
+                <a href="https://www.linkedin.com/in/yash-tiwari-2111b934b/"
+                    class="bg-blue-600 text-white xs:px-6 xs:py-3 px-3 py-[6px] rounded-lg hover:bg-blue-800"
+                    rel="noopener noreferrer" target="_blank">LinkedIn</a>
+                <a href="https://github.com/YashRTech?tab=repositories"
+                    class="bg-gray-800 text-white xs:px-6 xs:py-3 px-3 py-[6px] rounded-lg hover:bg-gray-950"
+                    rel="noopener noreferrer" target="_blank">GitHub</a>
+                <a href="mailto:ramjitiwari4455@gmail.com"
+                    class="bg-green-500 text-white xs:px-6 xs:py-3 px-3 py-[6px] rounded-lg hover:bg-green-800"
+                    rel="noopener noreferrer" target="_blank">Email
+                    Me</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!--! Footer Section -->
+    <footer class="bg-[#0d0d0d] text-[#a0a0a0] py-8 text-center">
+        <p>© 2025 Yash Tiwari. Built with Tailwind CSS 💙</p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
