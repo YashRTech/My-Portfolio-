@@ -207,13 +207,7 @@ tl2.from(".closeIcon", {
 tl2.pause();
 icon.addEventListener("click", () => {
   tl2.play();
-
-  // document.querySelector(".full").classList.add("flex")
-  // document.querySelector(".full").classList.remove("hidden")
 });
 closeIcon.addEventListener("click", () => {
   tl2.reverse();
-
-  // document.querySelector(".full").classList.add("hidden")
-  // document.querySelector(".full").classList.remove("flex")
 });
